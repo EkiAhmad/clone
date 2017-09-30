@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clone</title>
+	<!-- bootstrap -->
+	<!-- <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- font-awesome -->
+	<!-- <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- javascript -->
+	<!-- <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<style type="text/css">
+	body{
+		background-color: rgb(243,243,243);
+	}
+	.title{
+		width: 200px;
+		height: 40px;
+	}
+	a{
+		color: Gray;
+	}
+	ul{
+		list-style-type: none;
+	}
+	.row{
+		margin: 10px;
+	}
+	.tas{
+		margin-left: 4px;
+	}
+	hr{
+		border: 1px solid black;
+		margin-top: 35px; 
+	}
+	.btn-night{
+		margin: 10px;
+		width: 90%;
+		background-color: Black;
+		color: white;
+	}
+	.btn-night:hover{
+		color: pink;
+	}
+	h3{
+		text-align: center;
+	}
+	p{
+		text-align: center;
+		font-size: 10px;
+	}
+	.langganan{
+		border: 1px solid gray;
+		width: 100%;
+	}
+	.btn-black{
+		margin: 5px;
+		background-color: Black;
+		color: white;
+		width: 48%;		
+		
+	}
+	.btn-black:hover{
+		background-color: #404040;
+		color: white;
+	}
+	.btn-group{
+		display: inline;
+		width: 100%;		
+	}
+	.img-apps{
+		width: 25%;
+		height: 25%;
+	}
+	.foot li{
+		margin-left: -40px;
+	}
+	footer{
+		background-color: white;
+		border: 1px solid gray;
+	}
+	.tfoot{
+		margin: 100px;
+		color: gray;
+		text-align: center;
+		background-color: white;
+	}
+</style>
+</head>
+<body>
+<header>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-3">
+			<a href="#"><img class="img-responsive title " src="assets/img/bb-logo.png"></a>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-3"></div>
+		<div class="col-md-1">
+			Masuk/Daftar
+		</div>
+		<div class="col-md-2">
+			<div class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+			      <i class="fa fa-shopping-bag"></i>
+						Tas Belanja Saya <span class="caret"></span>
+	    		</a>
+
+	    		<ul class="dropdown-menu">
+
+	    			<span class="tas">Tas Belanja Anda Kosong</span>
+	    			<input class="btn btn-night" type="button" name="bayar" value="Pembayaran">
+	    		</ul>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+</header>
+<nav>	
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-2">	
+<!-- 			<div class="btn-group btn-toggle"> 
+			    <button class="btn btn-default" data-toggle="collapse" data-target="#collapsible">Wanita</button>
+			    <button class="btn btn-primary active" data-toggle="collapse" data-target="#collapsible">Pria</button>
+			</div> -->
+		</div>
+		<div class="col-md-6">
+			<div class="navbar-header">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Pakaian</a>
+						<ul>
+							<li><a href="#">Dress</a></li>
+							<li><a href="#">Atasan</a></li>
+							<li><a href="#">Bawahan</a></li>
+							<li><a href="#">Bawahan</a></li>
+							<li><a href="#">Outerwear</a></li>
+							<li><a href="#">Batik</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Sepatu</a>
+						<ul>
+							<li><a href="#">High Hells</a></li>
+							<li><a href="#">Wedges</a></li>
+							<li><a href="#">Flats</a></li>
+							<li><a href="#">Sneakers</a></li>
+							<li><a href="#">Loafers And Slip Ons</a></li>
+							<li><a href="#">Boots</a></li>
+							<li><a href="#">Sandals</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Tas</a>
+						<ul>
+							<li><a href="#">Backpack</a></li>
+							<li><a href="#">Dompet</a></li>
+							<li><a href="#">Hand Bag</a></li>
+							<li><a href="#">Sling Bag</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Aksesoris</a>
+						<ul>
+							<li><a href="#">Topi</a></li>
+							<li><a href="#">Ikat Pinggang</a></li>
+							<li><a href="#">Kacamata</a></li>
+							<li><a href="#">Jam Tangan</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Batik</a></li>
+					<li><a href="#">Sale</a></li>
+					<li><a href="#">Lokasi Store</a></li>
+		  <div class="well collapse" id="collapsible"> 
+			<li><a href="#">Kecantikan</a></li>
+				<ul>
+					<li><a href="#">Riasan Wajah</a></li>
+					<li><a href="#">Riasan Mata</a></li>
+					<li><a href="#">Riasan Bibir</a></li>
+				</ul>
+		  </div>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<i class="fa fa-search"></i>
+			<input type="text" name="src" class="form-input" placeholder="Cari Produk" size="10">
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+</nav>
+<content>	
+	<div class="row">
+		<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<img src="assets/img/SLUG-TEASER-SALEMANGAT-MEMBARA_CGK6R.jpg" class="img-responsive">
+			</div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10"><center><a href="#"><img class="img-responsive" src="assets/img/Superinfo-weekend-shopping_HWAYB.gif"></a></center></div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-4"><a href="#"><img class="img-responsive" src="assets/img/LB-clothing-bundling-R1-1_CQLY7.jpg"></a></div>
+		<div class="col-md-6"><a href="#"><img class="img-responsive" src="assets/img/TopBanner-BUNDLING-BAG-SHOES-02_HT6CL.jpg"></a></div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10"><a href="#"><img class="img-responsive" src="assets/img/Leaderbox-all-time-best-seller-1_PYQXK.jpg"></a></div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-5"><a href="#"><img class="img-responsive" src="assets/img/SQR1-independenceday_HF4XZ.jpg"></a></div>
+		<div class="col-md-5"><a href="#"><img class="img-responsive" src="assets/img/SQR2-PremiumBrands_RYND5.jpg"></a></div>
+		<div class="col-md-1"></div>	
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-5"><a href="#"><img class="img-responsive" src="assets/img/SQR3-ROAD-TO-IND-DAY-MERAH-PUTIH-1_Q4MZ8.jpg"></a></div>
+		<div class="col-md-5"><a href="#"><img class="img-responsive" src="assets/img/SQR4-MEN-BANNER_4EUHQ.jpg"></a></div>
+		<div class="col-md-1"></div>	
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-3"><hr></div>
+		<div class="col-md-4"><h3>Temukan Kebutuhan Fashionmu</h3></div>
+		<div class="col-md-3"><hr></div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="col-md-4">
+				<a href="#"><img class="img-responsive" src="assets/img/NEW-ARRIVAL-BB_FJTGU.jpg"></a>				
+			</div>
+			<div class="col-md-4">				
+				<a href="#"><img class="img-responsive" src="assets/img/HEELS-BB_8EIEP.jpg"></a>
+			</div>
+			<div class="col-md-4">
+				<a href="#"><img class="img-responsive" src="assets/img/ATASAN-BB_T6CJO.jpg"></a>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="col-md-4">
+			<a href="#"><img class="img-responsive" src="assets/img/SLING-BAG-BB_522Q5.jpg"></a>
+			</div>
+			<div class="col-md-4">				
+			<a href="#"><img class="img-responsive" src="assets/img/PAKAIAN-PRIA-BB_UJE4I.jpg"></a>
+			</div>
+			<div class="col-md-4">
+			<a href="#"><img class="img-responsive" src="assets/img/CLEARANCE-BB_5LQ1W.jpg"></a>
+			</div>
+		</div>	
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-3"><hr></div>
+		<div class="col-md-4"><h3>Pilihan Brand Terbaik</h3></div>
+		<div class="col-md-3"><hr></div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="col-md-4">
+			<a href="#"><img class="img-responsive" src="assets/img/1A-BB-1_PQQWW.jpg"></a>
+			</div>
+			<div class="col-md-4">				
+			<a href="#"><img class="img-responsive" src="assets/img/1B-BB-1_U4PJE.jpg"></a>
+			</div>
+			<div class="col-md-4">
+			<a href="#"><img class="img-responsive" src="assets/img/1C-BB-1_EK3MV.jpg"></a>
+			</div>
+		</div>	
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="col-md-4">
+			<a href="#"><img class="img-responsive" src="assets/img/2A-KEDS-BB_3RT95.jpg"></a>
+			</div>
+			<div class="col-md-4">				
+			<a href="#"><img class="img-responsive" src="assets/img/2B-ALIVE-BB_PUEAS.jpg"></a>
+			</div>
+			<div class="col-md-4">
+			<a href="#"><img class="img-responsive" src="assets/img/2C-LONDON-BERRY-BB_XTRWH.jpg"></a>
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="col-md-4">
+			<a href="#"><img class="img-responsive" src="assets/img/3A-BB-1_BTP20.jpg"></a>
+			</div>
+			<div class="col-md-4">				
+			<a href="#"><img class="img-responsive" src="assets/img/3B-BB-1_ESVGL.jpg"></a>
+			</div>
+			<div class="col-md-4">
+			<a href="#"><img class="img-responsive" src="assets/img/3C-GREENLIGHT-BB_PGZC5.jpg"></a>
+			</div>
+		</div>	
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<a href="#"><img class="img-responsive" src="assets/img/Partnership_RR8J8.jpg"></a>
+		</div>
+		<div class="col-md-1"></div>	
+	</div>
+</content>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<p>
+				Berrybenka.com adalah situs belanja online fesyen dan kecantikan ternama di Indonesia. Berrybenka menjual lebih dari 1000 merek lokal dan internasional, termasuk produk in-house label.Berrybenka menawarkan kombinasi produk fesyen dan kecantikan terkini untuk setiap gaya personal yang beragam.
+			</p>
+			<p>
+				Kami menyediakan produk berkualitas terbaik untuk wanita dan pria, bervariasi dari pakaian, aksesori, sepatu, tas, produk olahraga dan kecantikan. Komitmen kami adalah memberikan pengalaman belanja online yang menyenangkan, mudah, dan terpercaya untuk memuaskan pelanggan dengan koleksi baru dan penawaran spesial setiap harinya, serta beragam keuntungan seperti kemudahan pengembalian produk hingga 30 hari setelah barang diterima, layanan bayar di tempat dan pengiriman gratis.
+			</p>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<footer>
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-1">
+				<h5>Informasi</h5>
+				<ul class="foot">
+					<li><a href="#">Tentang Kami</a></li>
+					<li><a href="#">Syarat Penggunaan</a></li>
+					<li><a href="#">Ketentuan Privasi</a></li>
+					<li><a href="#">Kontak Kami</a></li>
+				</ul>
+
+			</div>
+			<div class="col-md-1">
+				<h5>Rekanan</h5>
+				<ul class="foot">
+					<li><a href="#">Daftarkan Brand Anda</a></li>
+					<li><a href="#">Daftar Brand</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2">
+				<h5>Bantuan</h5>
+				<ul class="foot">
+					<li><a href="#">Bayar Di Tempat</a></li>
+					<li><a href="#">Pertanyaan Umum</a></li>
+					<li><a href="#">Cara Pmesanan</a></li>
+					<li><a href="#">Ketentuan Pengembalian</a></li>
+					<li><a href="#">Ketentuan Retur Produk Jam</a></li>
+					<li><a href="#">Ketentuan Pengiriman</a></li>
+					<li><a href="#">Ketentuan Pengiriman Same-day</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2">
+				<h5>Toko Online Lainnya</h5>
+				<ul class="foot">
+					<li><a href="#">Hijabenka</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<h5>BERLANGGANAN NEWSLETTER DAPATKAN VOUCHER SENILAI IDR 50.000</h5>
+				<form class="langganan">
+					<input type="search" class="langganan" placeholder="Masukan Alamat Email" >
+					<br>
+					<div class="btn-group" role="group" aria-label="...">
+					  <button type="button" class="btn btn-black">Pria</button>
+					  <button type="button" class="btn btn-black">Wanita</button>
+					</div>
+				</form>
+				<br><br>
+				<h5>Belanja Lewat Mobile App</h5>
+				<img class="img-apps" src="assets/img/apple.gif">
+				<img class="img-apps" src="assets/img/google.gif">
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+		<div class="row">
+			<div class="tfoot">				
+				<div class="col-md-12">
+			<hr>
+					<span>ALL RIGHTS RESERVED © 2017 BERRYBENKA.COM</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script type="text/javascript">
+	$('.btn-toggle').click(function() {
+    $(this).find('.btn').toggleClass('active');  
+    
+    if ($(this).find('.btn-primary').size()>0) {
+    	$(this).find('.btn').toggleClass('btn-primary');
+    }
+    if ($(this).find('.btn-danger').size()>0) {
+    	$(this).find('.btn').toggleClass('btn-danger');
+    }
+    if ($(this).find('.btn-success').size()>0) {
+    	$(this).find('.btn').toggleClass('btn-success');
+    }
+    if ($(this).find('.btn-info').size()>0) {
+    	$(this).find('.btn').toggleClass('btn-info');
+    }
+    
+    $(this).find('.btn').toggleClass('btn-default');
+       
+});
+
+$('form').submit(function(){
+	alert($(this["options"]).val());
+    return false;
+});
+</script>
+<script>
+	$(document).ready(function() {
+    $('ul ul').hide();
+    $( 'li' ).hover(
+        
+        function(){
+            $(this).children('ul').slideDown(200);
+        },
+        function(){
+            $(this).children('ul').slideUp(200);
+        }
+    );
+}); 
+</script>
+<script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
